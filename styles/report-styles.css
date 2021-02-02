@@ -1,0 +1,55 @@
+:root {
+  --cmered: rgb(179, 8, 8);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+nav {
+  background-color: rgb(179, 8, 8);
+  color: white;
+  height: 7.5vh;
+}
+
+nav p {
+  padding: 10px;
+  font-size: 1.5em;
+}
+body {
+  background-color: rgba(241, 241, 241, 0.055);
+}
+main {
+  margin: 25px 50px;
+}
+
+h1 {
+  color: var(--cmered);
+  margin: 10px 0;
+}
+
+h2 {
+  color: var(--cmered);
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+li,
+p {
+  padding: 5px 0;
+}
+
+button {
+  border-radius: 3px;
+  background-color: rgba(233, 233, 233, 0.24);
+  border-color: rgba(228, 228, 228, 0.233);
+  color: rgb(66, 66, 66);
+  position: relative;
+  float: right;
+  padding: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
