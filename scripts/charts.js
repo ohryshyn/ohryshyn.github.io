@@ -5,6 +5,7 @@ const getRandomDataArr = (numberOfPoints, maxLimit) => {
     Math.floor(Math.random() * maxLimit)
   );
 };
+Chart.defaults.global.title.fontSize = 24;
 
 // Total mnf sales -- Combo Chart -- Line and Bar
 let ctx1 = document.getElementById("combo-chart").getContext("2d");
