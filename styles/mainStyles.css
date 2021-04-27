@@ -1,3 +1,10 @@
+:root {
+  --main-highlight-blue: rgba(30, 142, 218, 0.856);
+  --main-highlight-dark: rgb(54, 54, 54);
+  --main-bg-gray: rgb(245, 245, 245);
+  --main-border-r: 7px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,15 +15,45 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.container {
+.main-container {
+ margin: 5vh 5vw; 
+}
+
+.intro {
+  background-color: var(--main-bg-gray);
+  margin: 10px auto;
+  border-radius: var(--main-border-r);
+  line-height: 1.75em;
+  padding: 20px;
+}
+.links-grid {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  gap: 1em;
+  margin-top: 1.2em;
+  
+}
+
+.link {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
-  color: rgba(151, 151, 151, 0.623);
-  font-size: 3.5em;
-  font-weight: 600;
-  line-height: 2em;
-  letter-spacing: -0.01em;
+  align-items: center;
+  border-radius: var(--main-border-r);
+  height: 20vh;
+  background-color: var(--main-bg-gray);
+}
+
+.fab,
+.fas {
+  color: var(--main-highlight-dark);
+  font-size: 10vh;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 2rem;
 }
