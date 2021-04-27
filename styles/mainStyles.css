@@ -1,7 +1,8 @@
 :root {
-  --main-highlight-blue: rgba(30, 142, 218, 0.856);
+  --main-highlight-blue: rgba(1, 89, 148, 0.925);
   --main-highlight-dark: rgb(54, 54, 54);
   --main-bg-gray: rgb(245, 245, 245);
+  --main-bg-blue: rgba(168, 198, 255, 0.377);
   --main-border-r: 7px;
 }
 
@@ -13,10 +14,21 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  min-height: 100%;
 }
 
 .main-container {
- margin: 5vh 5vw; 
+  padding: 5vh 5vw;
+}
+
+h1 {
+  font-size: 3.5em;
+  color: rgb(202, 202, 202);
+}
+
+.focus {
+  font-size: 1.5em;
+  line-height: 1.75em;
 }
 
 .intro {
@@ -25,13 +37,16 @@ body {
   border-radius: var(--main-border-r);
   line-height: 1.75em;
   padding: 20px;
+  font-size: 1.1em;
 }
 .links-grid {
   display: grid;
-  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1em;
   margin-top: 1.2em;
-  
+}
+.no-decor {
+  text-decoration: none;
 }
 
 .link {
@@ -41,19 +56,20 @@ body {
   border-radius: var(--main-border-r);
   height: 20vh;
   background-color: var(--main-bg-gray);
+  transition: background-color 250ms;
+}
+
+.link:hover {
+  background-color: var(--main-bg-blue);
+}
+
+.link:hover > .fas,
+.link:hover > .fab {
+  color: var(--main-highlight-blue);
 }
 
 .fab,
 .fas {
   color: var(--main-highlight-dark);
   font-size: 10vh;
-}
-
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  height: 2rem;
 }
