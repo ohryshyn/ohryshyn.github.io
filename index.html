@@ -15,13 +15,44 @@
       src="https://kit.fontawesome.com/d35dd05318.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function()
+      {
+        $(".menu").hide();
+        $(".ham").click(function()
+        {$(".menu").slideToggle("slow")})
+      })
+    </script>
   </head>
   <body>
     <header>
       <nav id="navigation">
-        <a href="https://www.oleh.ai/" class="no-decor home">oleh.ai</a>
-        <i class="fas fa-bars" id="burger"></i>
+        <a href="https://www.oleh.ai/" class="home">oleh.ai</a>
+        <!-- hamburger icon -->
+        <svg
+          class="ham hamRotate ham4"
+          viewBox="0 0 100 100"
+          width="80"
+          onclick="this.classList.toggle('active')"
+        >
+          <path
+            class="line top"
+            d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"
+          />
+          <path class="line middle" d="m 70,50 h -40" />
+          <path
+            class="line bottom"
+            d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
+          />
+        </svg>
       </nav>
+      <div class="menu">
+        <ul>
+          <a href="#"><li>Blog</li></a>
+          <a href="#"><li>Resume</li></a>
+        </ul>
+      </div>
     </header>
     <main>
       <div class="main-container">
@@ -33,34 +64,22 @@
           </p>
           <p class="intro">
             Currently working as a <strong>Database Coordinator</strong> at the
-            <a
-              href="https://supportontariomade.ca/"
-              target="_blank"
-              class="no-decor"
+            <a href="https://supportontariomade.ca/" target="_blank"
               >Ontario Made program</a
             >
             promoting and celebrating locally-manufactured products and
             services.
           </p>
           <div class="links-grid">
-            <a
-              href="https://www.linkedin.com/in/oleh-hryshyn/"
-              target="_blank"
-              class="no-decor"
+            <a href="https://www.linkedin.com/in/oleh-hryshyn/" target="_blank"
               ><div class="link"><i class="fab fa-linkedin-in"></i></div
             ></a>
-            <a
-              href="https://github.com/oleh-ai"
-              target="_blank"
-              class="no-decor"
+            <a href="https://github.com/oleh-ai" target="_blank"
               ><div class="link"><i class="fab fa-github"></i></div
             ></a>
           </div>
         </div>
       </div>
     </main>
-    <footer id="footer">
-      <div>Website is under development.</div>
-    <div>Oleh Hryshyn | 2021</div></footer>
   </body>
 </html>
