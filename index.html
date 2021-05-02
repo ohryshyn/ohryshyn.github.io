@@ -17,12 +17,12 @@
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-      $(document).ready(function()
-      {
+      $(document).ready(function () {
         $(".menu").hide();
-        $(".ham").click(function()
-        {$(".menu").slideToggle("slow")})
-      })
+        $(".ham").click(function () {
+          $(".menu").slideToggle("slow");
+        });
+      });
     </script>
   </head>
   <body>
@@ -31,9 +31,9 @@
         <a href="https://www.oleh.ai/" class="home">oleh.ai</a>
         <!-- hamburger icon -->
         <svg
-          class="ham hamRotate ham4"
+          class="ham hamRotate"
           viewBox="0 0 100 100"
-          width="80"
+          width="60"
           onclick="this.classList.toggle('active')"
         >
           <path
@@ -46,9 +46,16 @@
             d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
           />
         </svg>
+        <div class="menu-bar">
+          <ul>
+            <a href="#"><li>Resume</li></a>
+            <a href="#"><li>Blog</li></a>
+          </ul>
+        </div>
       </nav>
       <div class="menu">
         <ul>
+          <a href="#"><li>Home</li></a>
           <a href="#"><li>Blog</li></a>
           <a href="#"><li>Resume</li></a>
         </ul>
