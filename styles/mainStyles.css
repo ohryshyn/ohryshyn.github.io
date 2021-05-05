@@ -21,62 +21,6 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: var(--main-bg-dark);
-}
-
-#navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 5px;
-  max-width: 854px;
-  margin: 0 auto;
-}
-.home {
-  font-size: 28px;
-  font-weight: 800;
-  color: white;
-}
-.menu-bar {
-  display: none;
-}
-
-.menu {
-  font-weight: 700;
-  font-size: 1.2em;
-  background-color: rgba(247, 247, 247, 0.979);
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 1em;
-  padding: 0 2em;
-}
-
-.menu ul {
-  list-style: none;
-}
-
-.menu a {
-  color: var(--main-bg-dark);
-}
-.menu li {
-  border-bottom: #cfcfcf 1px solid;
-  padding: 10px 0;
-}
-
-.menu li:hover,
-.menu-bar li:hover {
-  background-color: rgb(255, 255, 255);
-}
-
-.menu-bar li:hover {
-  color: var(--main-highlight-dark)
-}
-
 .main-container {
   padding: 80px 5vw 20px 5vw;
   max-width: 768px;
@@ -137,75 +81,7 @@ h1 {
   font-size: 10vh;
 }
 
-/* hamburger animation */
-.ham {
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  transition: transform 400ms;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.hamRotate.active {
-  transform: rotate(45deg);
-}
-.hamRotate180.active {
-  transform: rotate(180deg);
-}
-.line {
-  fill: none;
-  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke: white;
-  stroke-width: 5.5;
-  stroke-linecap: round;
-}
-.ham .top {
-  stroke-dasharray: 40 121;
-}
-.ham .bottom {
-  stroke-dasharray: 40 121;
-}
-.ham.active .top {
-  stroke-dashoffset: -68px;
-}
-.ham.active .bottom {
-  stroke-dashoffset: -68px;
-}
-
-@media only screen and (min-width: 600px) {
-  #navigation .ham {
-    display: none;
-  }
-  .menu-bar {
-    display: block;
-  }
-
-  .menu-bar ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-  }
-
-  .menu-bar ul li {
-    color: white;
-    padding: 16px 25px;
-    font-size: 1.5em;
-  }
-}
-
 @media (prefers-color-scheme: dark) {
-  header {
-    background-color: rgb(27, 27, 27);
-    border-bottom: 1px solid rgb(51, 51, 51);
-  }
-  .menu {
-    background-color: rgba(80, 80, 80, 0.356);
-  }
-  .menu li {
-    color: rgb(238, 238, 238);
-  }
-
   body {
     background-color: var(--main-bg-dark);
     color: rgb(228, 228, 228);
@@ -223,15 +99,7 @@ h1 {
   .link:hover {
     background-color: rgb(4, 59, 104);
   }
-  
   .link:hover > .fab {
     color: rgb(22, 122, 189);
   }
-
-  .menu li:hover,
-  .menu-bar li:hover {
-    background-color: rgb(214, 214, 214);
-    color: rgb(83, 83, 83);
-  }
-
 }
