@@ -21,85 +21,9 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.main-container {
-  padding: 80px 5vw 20px 5vw;
-  max-width: 768px;
-  margin: 0 auto;
-}
-
-h1 {
-  font-size: 3.5em;
-  color: rgb(202, 202, 202);
-}
-
-.primary {
-  font-size: 1.8rem;
-  line-height: 1.75em;
-  font-weight: 400;
-  margin: 1em auto;
-}
-
-.intro {
-  background-color: var(--main-bg-gray);
-  margin: 10px auto;
-  border-radius: var(--main-border-r);
-  line-height: 1.75em;
-  padding: 20px;
-  font-size: 1.45em;
-}
-.intro a {
-  color: var(--main-highlight-blue);
-  font-weight: 800;
-}
-.links-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1em;
-  margin-top: 1.2em;
-}
-
-.link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: var(--main-border-r);
-  height: 20vh;
-  background-color: var(--main-bg-gray);
-  transition: background-color 250ms;
-}
-
-.link:hover {
-  background-color: var(--main-bg-blue);
-}
-
-.link:hover > .fab {
-  color: var(--main-highlight-blue);
-}
-
-.fab {
-  color: var(--main-highlight-dark);
-  font-size: 10vh;
-}
-
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--main-bg-dark);
     color: rgb(228, 228, 228);
-  }
-  .intro,
-  .link {
-    background-color: rgb(70, 70, 70);
-  }
-  .intro a {
-    color: rgb(22, 122, 189);
-  }
-  .fab {
-    color: rgb(228, 228, 228);
-  }
-  .link:hover {
-    background-color: rgb(4, 59, 104);
-  }
-  .link:hover > .fab {
-    color: rgb(22, 122, 189);
   }
 }
