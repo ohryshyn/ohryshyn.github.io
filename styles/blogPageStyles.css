@@ -3,3 +3,27 @@
     max-width: 768px;
     margin: 0 auto;
   }
+
+.blog-container * {
+  margin-bottom: 0.775em
+}
+
+.blog-date {
+  font-style: italic;
+  font-size: 0.925em;
+}
+
+.blog-description {
+  line-height: 1.525em;
+}
+
+.blog-link {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (prefers-color-scheme: dark) {
+  .blog-date {
+    color: rgb(168, 168, 168);
+  }
+}
