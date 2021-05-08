@@ -14,6 +14,7 @@
 
 a {
   text-decoration: none;
+  color: var(--main-highlight-blue);
 }
 
 body {
@@ -25,5 +26,8 @@ body {
   body {
     background-color: var(--main-bg-dark);
     color: rgb(228, 228, 228);
+  }
+  a {
+    color: rgb(22, 122, 189);
   }
 }
