@@ -1,14 +1,18 @@
+.menu-bar ul a:last-child li {
+  border-bottom: 3px solid #ff8432;
+}
+
 .main-container {
   padding: 80px 5vw 20px 5vw;
   max-width: 768px;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 .blog-container {
-  border: rgb(90, 90, 90) 1px solid;
   border-radius: 25px;
   padding: 15px;
-  background-color: rgb(70, 70, 70);
+  background-color: var(--main-bg-gray);
   margin-bottom: 2em;
 }
 
@@ -37,5 +41,10 @@
 @media (prefers-color-scheme: dark) {
   .blog-date {
     color: rgb(139, 139, 139);
+  }
+
+  .blog-container {
+    background-color: rgb(70, 70, 70);
+    border: rgb(90, 90, 90) 1px solid;
   }
 }
