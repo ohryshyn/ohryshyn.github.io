@@ -13,11 +13,25 @@
     />
     <link href="styles/mainStyles.css" rel="stylesheet" />
     <link href="styles/headerStyles.css" rel="stylesheet" />
+    <link href="styles/footerStyles.css" rel="stylesheet" />
     <link href="styles/blogPageStyles.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       $(function () {
         $("#header").load("header.html");
+      });
+      $(function () {
+        $("#footer").load("footer.html");
+      });
+      $(function () {
+        $(".blog-container").hover(
+          function () {
+            $(".blog-header", this).css("color", "rgb(22, 122, 189)");
+          },
+          function () {
+            $(".blog-header", this).css("color", "");
+          }
+        );
       });
     </script>
   </head>
@@ -49,5 +63,6 @@
         </div>
       </div>
     </main>
+    <footer id="footer"></footer>
   </body>
 </html>
