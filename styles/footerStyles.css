@@ -1,0 +1,16 @@
+#footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #202020;
+    text-align: center;
+  }
+
+  #copyright {
+      color: rgb(99, 99, 99);
+      font-size: 0.85em;
+      font-style: italic;
+  }
+
