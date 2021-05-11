@@ -18,7 +18,7 @@ header {
 .home {
     font-size: 28px;
     font-weight: 800;
-    color: white;
+    color: var(--text-dark);
   }
 
 .menu-bar {
@@ -43,7 +43,7 @@ header {
   color: var(--main-bg-dark);
 }
 .menu li {
-  border-bottom: #cfcfcf 1px solid;
+  border-bottom: #c0c0c0 2px solid;
   padding: 10px 0;
 }
 
@@ -108,7 +108,7 @@ header {
     }
   
     .menu-bar ul li {
-      color: white;
+      color: var(--text-dark);
       padding: 16px 25px;
       font-size: 1.5em;
     }
@@ -116,14 +116,14 @@ header {
 
   @media (prefers-color-scheme: dark) {
     header {
-        background-color: rgb(27, 27, 27);
+        background-color: #1E1E1E;
         border-bottom: 1px solid rgb(51, 51, 51);
       }
       .menu {
         background-color: rgba(80, 80, 80, 0.356);
       }
       .menu li {
-        color: rgb(238, 238, 238);
+        color: var(--text-dark);
       }
       .menu li:hover,
       .menu-bar li:hover {
