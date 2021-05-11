@@ -3,7 +3,10 @@
   --main-highlight-dark: rgb(54, 54, 54);
   --main-bg-gray: rgb(245, 245, 245);
   --main-bg-blue: rgba(168, 198, 255, 0.377);
-  --main-bg-dark: rgb(34, 34, 34);
+  --main-bg-dark: #222222;
+  --link-dark: #8685EF;
+  --text-dark: #E6E6E6;
+  --container-bg-dark: #383645;
   --main-border-r: 7px;
 }
 
@@ -34,15 +37,15 @@ body {
     position: relative;
     margin: 0;
     min-height: 100%;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
   }
 
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--main-bg-dark);
-    color: rgb(228, 228, 228);
+    color: var(--text-dark);
   }
   a {
-    color: rgb(22, 122, 189);
+    color: var(--link-dark);
   }
 }
