@@ -26,10 +26,10 @@
       $(function () {
         $(".blog-container").hover(
           function () {
-            $(".blog-header", this).css("color", "rgb(22, 122, 189)");
+            $(this).css("border-color", "#8083FF");
           },
           function () {
-            $(".blog-header", this).css("color", "");
+            $(this).css("border-color", "");
           }
         );
       });
@@ -39,8 +39,9 @@
     <header id="header"></header>
     <main>
       <div class="main-container">
+        <h1>Blog</h1>
         <div class="blog-container">
-          <h2 class="blog-header">Lorem ipsum</h2>
+          <h2 class="blog-header">Teaching Code in Place 2021</h2>
           <div class="blog-date">May 20, 2021</div>
           <div class="blog-description">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
@@ -51,7 +52,7 @@
           <a href="#"><div class="blog-link">Read more</div></a>
         </div>
         <div class="blog-container">
-          <h2 class="blog-header">Lorem ipsum</h2>
+          <h2 class="blog-header">Website got launched!</h2>
           <div class="blog-date">May 7, 2021</div>
           <div class="blog-description">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
