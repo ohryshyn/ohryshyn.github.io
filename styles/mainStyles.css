@@ -1,8 +1,8 @@
 :root {
-  --main-highlight-blue: rgb(57, 105, 238);
-  --main-highlight-dark: rgb(54, 54, 54);
+  --link-light: #8083FF;
   --main-bg-gray: rgb(245, 245, 245);
   --main-bg-blue: rgba(168, 198, 255, 0.377);
+  --text-light: #f8f8f8;
   --main-bg-dark: #222222;
   --link-dark: #8685EF;
   --text-dark: #E6E6E6;
@@ -28,7 +28,7 @@ html {
 
 a {
   text-decoration: none;
-  color: var(--main-highlight-blue);
+  color: var(--link-light);
 }
 
 body {

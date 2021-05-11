@@ -49,11 +49,11 @@
   }
   
   .link:hover > .fab {
-    color: var(--main-highlight-blue);
+    color: var(--link-light);
   }
   
   .fab {
-    color: var(--main-highlight-dark);
+    color: rgb(54, 54, 54);
     font-size: 10vh;
   }
   
