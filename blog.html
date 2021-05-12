@@ -11,18 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link href="styles/mainStyles.css" rel="stylesheet" />
-    <link href="styles/headerStyles.css" rel="stylesheet" />
-    <link href="styles/footerStyles.css" rel="stylesheet" />
-    <link href="styles/blogPageStyles.css" rel="stylesheet" />
+    <link href="/styles/mainStyles.css" rel="stylesheet" />
+    <link href="/styles/headerStyles.css" rel="stylesheet" />
+    <link href="/styles/footerStyles.css" rel="stylesheet" />
+    <link href="/styles/blogPageStyles.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/scripts/insertGeneralElements.js"></script>
     <script>
-      $(function () {
-        $("#header").load("header.html");
-      });
-      $(function () {
-        $("#footer").load("footer.html");
-      });
       $(function () {
         $(".blog-container").hover(
           function () {
@@ -36,7 +31,6 @@
     </script>
   </head>
   <body>
-    <header id="header"></header>
     <main>
       <div class="main-container">
         <h1>Blog</h1>
@@ -64,6 +58,5 @@
         </div>
       </div>
     </main>
-    <footer id="footer"></footer>
   </body>
 </html>
