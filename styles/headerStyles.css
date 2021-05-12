@@ -49,7 +49,7 @@ header {
   color: var(--main-bg-dark);
 }
 .menu li {
-  border-bottom: #c0c0c0 2px solid;
+  border-bottom: #c0c0c0 1px solid;
   padding: 10px 0;
 }
 
