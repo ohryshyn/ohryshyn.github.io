@@ -17,6 +17,7 @@ h1 {
   padding: 15px;
   background-color: var(--main-bg-gray);
   margin-bottom: 2em;
+  border: 1px solid var(--main-bg-gray);
 }
 
 .blog-container * {
@@ -39,6 +40,10 @@ h1 {
   display: inline-block;
   font-size: 1.1em;
   margin-bottom: auto;
+}
+
+.blog-link:hover {
+  color: rgb(201, 137, 253);
 }
 
 @media (prefers-color-scheme: dark) {
