@@ -1,0 +1,27 @@
+main {
+    padding-top: 4em;
+}
+
+.blog-body {
+    padding: 0 5vw;
+    max-width: 768px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.blog-heading { 
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.575em;
+}
+
+section {
+    line-height: 1.375em;
+    font-size: 1.1em;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+}
