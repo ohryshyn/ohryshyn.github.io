@@ -39,6 +39,7 @@ header {
   text-align: center;
   line-height: 1em;
   padding: 0 2em;
+  display: none;
 }
 
 .menu ul {
@@ -59,7 +60,7 @@ header {
 }
 
 .menu-bar li:hover {
-  color: var(--main-highlight-dark);
+  color: #797979;
 }
 
 /* hamburger animation */

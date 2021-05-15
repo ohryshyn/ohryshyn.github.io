@@ -23,7 +23,7 @@ h1 {
 }
 
 .blog-header {
-  color: var(--text-light);
+  color: black;
 }
 
 .blog-header:hover {
