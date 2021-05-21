@@ -1,8 +1,5 @@
-.main-container {
-  padding: 40px 5vw 20px 5vw;
-  max-width: 768px;
-  margin: 0 auto;
-  margin-top: 20px;
+main {
+  padding-top: 60px;
 }
 
 h1 {
