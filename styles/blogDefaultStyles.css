@@ -2,26 +2,32 @@ main {
     padding-top: 4em;
 }
 
-.blog-body {
-    padding: 0 5vw;
-    max-width: 768px;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-
 .blog-heading { 
     text-align: center;
-    padding-bottom: 10px;
-    font-size: 1.575em;
+    padding: 10px 0;
+    font-size: 2em;
 }
 
 section {
-    line-height: 1.375em;
+    line-height: 1.525em;
     font-size: 1.1em;
 }
+
+.section-heading {
+    margin: 25px 0 7px 0;
+}
+
 
 .img-container {
     display: flex;
     justify-content: center;
     margin: 15px auto;
+}
+
+blockquote {
+    font-style: italic;
+    padding: 0 10px;
+    margin: 10px 0;
+    background-color: rgba(255, 105, 180, 0.158);
+    text-align: center;
 }
