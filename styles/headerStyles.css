@@ -3,6 +3,7 @@ header {
   top: 0;
   width: 100%;
   background-color: var(--main-bg-dark);
+  z-index: 999;
 }
 
 #navigation {
