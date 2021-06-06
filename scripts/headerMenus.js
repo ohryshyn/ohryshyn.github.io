@@ -3,7 +3,7 @@ $(document).ready(function () {
       $(".menu").hasClass("active")
         ? $(".menu").removeClass("active")
         : $(".menu").addClass("active");
-      $(".menu").slideToggle("slow");
+      $(".menu").slideToggle(350);
     });
   });
   $(document).mouseup(function (e) {
