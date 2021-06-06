@@ -10,7 +10,7 @@ h1 {
   margin: 15px auto;
 }
 
-.intro {
+.shadow-bg {
   background-color: var(--main-bg-gray);
   margin: 10px auto;
   border-radius: var(--main-border-r);
@@ -18,9 +18,36 @@ h1 {
   padding: 20px;
   font-size: 1.45em;
 }
-.intro a {
+.shadow-bg a {
   font-weight: 800;
 }
+
+.skills::before {
+  content: "Skills";
+  font-weight: bold;
+  border-bottom: rgb(212, 212, 212) 4px solid;
+  padding-bottom: 1px;
+  font-size: 1.4em;
+}
+
+.skills div {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills ul {
+  list-style-type: none;
+  border: rgb(152, 114, 240) 2px dashed;
+  padding: 15px 20px;
+  min-width: 150px;
+  text-align: center;
+}
+
+.fab {
+  color: rgb(54, 54, 54);
+}
+
 .links-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -46,13 +73,12 @@ h1 {
   color: var(--link-light);
 }
 
-.fab {
-  color: rgb(54, 54, 54);
+.link .fab {
   font-size: 10vh;
 }
 
 @media (prefers-color-scheme: dark) {
-  .intro,
+  .shadow-bg,
   .link {
     background-color: var(--container-bg-dark);
   }
