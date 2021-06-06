@@ -34,12 +34,12 @@ header {
 
 .menu {
   font-weight: 700;
-  font-size: 1.2em;
-  background-color: rgba(247, 247, 247, 0.979);
+  font-size: 1.33em;
+  background-color: rgba(247, 247, 247, 0.952);
   text-transform: uppercase;
   text-align: center;
   line-height: 1em;
-  padding: 0 2em;
+  padding: 0 5px;
   display: none;
 }
 
@@ -50,9 +50,10 @@ header {
 .menu a {
   color: var(--main-bg-dark);
 }
+
 .menu li {
   border-bottom: #c0c0c0 1px solid;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 .menu li:hover,
