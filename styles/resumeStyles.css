@@ -1,3 +1,7 @@
+h1 {
+  text-align: center;
+}
+
 .resume-section {
   margin-bottom: 1.5em;
   line-height: 1.5em;
@@ -11,14 +15,16 @@
   margin-bottom: 10px;
 }
 
-#professional-experience .description {
-  margin-bottom: 1.5em;
+.description,
+.degree {
+  margin-bottom: 1.35em;
 }
-#professional-experience .title {
+
+h3 {
   font-size: 1.1em;
 }
 
-#professional-experience .location {
+.location {
   font-style: italic;
 }
 
@@ -26,4 +32,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#education .name {
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul[title]::before {
+  content: attr(title);
+  font-size: 1.1em;
+  font-weight: 800;
+}
+
+.resume-section i {
+  margin-right: 10px;
+}
+
+.resume-section a {
+  font-weight: 500;
 }
