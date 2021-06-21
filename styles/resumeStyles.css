@@ -20,6 +20,10 @@ h1 {
   margin-bottom: 1.35em;
 }
 
+.duration {
+  color: rgb(139, 139, 139);
+}
+
 h3 {
   font-size: 1.1em;
 }
