@@ -63,3 +63,4 @@ const config = {
   },
 };
 let myChart = new Chart(document.getElementById("myChart"), config);
+// create canvas with id = 'myChart"
