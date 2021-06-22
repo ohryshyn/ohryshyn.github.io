@@ -52,9 +52,6 @@
             operations in Python. Overseeing website development and designing
             new features.
           </div>
-          <div>
-            <canvas id="myChart"></canvas>
-          </div>
         </div>
         <div class="description">
           <h3 class="title">Data Analyst Assistant</h3>
@@ -98,6 +95,15 @@
           <div class="responsibilities">
             Spearheaded the automation of weekly data entry activities.
             Illustrated program growth in Tableau.
+          </div>
+          <div style="display: flex; margin-top: 10px;">
+            <div style="color:rgb(155, 82, 223)">
+              <div>Show award</div>
+              <div>Show infographics</div>
+            </div>
+            <div style="width: 140px; height: 170px">
+              <canvas id="myChart"></canvas>
+            </div>
           </div>
         </div>
       </div>
@@ -220,25 +226,6 @@
         </div>
       </div>
     </main>
-    <script>
-      const labels = ["January", "February", "March", "April", "May", "June"];
-      const data = {
-        labels: labels,
-        datasets: [
-          {
-            label: "My First dataset",
-            backgroundColor: "rgb(255, 99, 132)",
-            borderColor: "rgb(255, 99, 132)",
-            data: [0, 10, 5, 2, 20, 30, 45],
-          },
-        ],
-      };
-      const config = {
-        type: "line",
-        data,
-        options: {},
-      };
-      var myChart = new Chart(document.getElementById("myChart"), config);
-    </script>
+    <script src="/scripts/resumeCharts.js"></script>
   </body>
 </html>
